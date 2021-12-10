@@ -16,9 +16,9 @@ $('#sizePicker').submit(function (event){
 function makeGrid(height,width) {
     //remove grid before creating a new one if one exists
     $('tr').remove(); 
-    for (var i = 1; i <= height; i++) {
+    for (let i = 1; i <= height; i++) {
         $('#pixelCanvas').append('<tr id=table' + i+'></tr>')
-        for (var j = 1; j <= width; j++) {
+        for (let j = 1; j <= width; j++) {
             $('#table' + i).append('<td></td>')
         }
     }
